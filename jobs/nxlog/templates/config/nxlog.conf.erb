@@ -19,7 +19,7 @@ LogLevel INFO
 ########################################
 <Input in_files>
   Module        im_file
-  File          "/var/vcap/data/sys/log/*.log"
+  File          "<%= p("nxlog.input_files") %>"
   Recursive     true
   SavePos       true
   InputType     LineBased

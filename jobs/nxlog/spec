@@ -20,3 +20,6 @@ properties:
   nxlog.pollinterval:
     description: Specifies in seconds how frequently the module will check for new files and new log entries.
     default: 10
+  nxlog.input_files:
+    description: Glob to look up input files
+    default: /var/vcap/data/sys/log/*.log
